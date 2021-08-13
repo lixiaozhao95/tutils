@@ -14,7 +14,7 @@ import com.google.gson.GsonBuilder;
  * @Version 1.0
  */
 public class T {
-    public void show(Context context) {
+    public static void show(Context context) {
         Gson gson = new GsonBuilder().create();
         String s = gson.toJson(new Bean("Info"));
         Toast.makeText(context, s, Toast.LENGTH_LONG).show();
